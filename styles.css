@@ -1,0 +1,248 @@
+    @charset "utf-8";
+    @import 'https://fonts.googleapis.com/css?family=PT+Sans';
+    /*!
+ * Zackery Robinson
+ * Styling for zackeryrobinson.com
+
+
+ */
+    
+    .table>tbody>tr>td,
+    .table>tbody>tr>th,
+    .table>tfoot>tr>td,
+    .table>tfoot>tr>th,
+    .table>thead>tr>td,
+    .table>thead>tr>th {
+        border-top-color: #f0ad4e !important;
+    }
+    
+    .table>thead>tr>th {
+        vertical-align: bottom;
+        border-bottom: 2px solid #f0ad4e !important;
+    }
+    
+    body {
+        background-color: #00061a;
+        font-family: 'PT Sans', sans-serif;
+    }
+    
+    td {
+        color: #f0ad4e;
+    }
+    
+    .tb td a {
+        color: #00ccff;
+    }
+    
+    h1 a {
+        text-decoration: none;
+        color: #00ccff;
+    }
+    
+    a:visited {
+        color: #00ccff;
+    }
+    
+    h1 a,
+    a:visited {
+        text-decoration: none;
+        color: #00ccff;
+    }
+    
+    h1 a:hover {
+        color: #00ccff;
+    }
+    
+    h1 {
+        color: #00ccff;
+        text-align: center;
+    }
+    
+    h2,
+    h3 {
+        color: #f0ad4e;
+        text-align: center;
+    }
+    
+    h4,
+    h5,
+    h6 {
+        color: #00ccff;
+        text-align: center;
+    }
+    
+    p {
+        color: #f0ad4e;
+        text-align: center;
+    }
+    
+    ul {
+        color: #f0ad4e;
+    }
+    
+    .img-limit {
+        width: 100%;
+        max-width: 450px;
+    }
+    /*.cellbtn {
+    display: none;
+    text-align: center;
+    padding: 0 0 30px 0;
+
+}*/
+    
+    .cellbtn {
+        z-index: 8;
+        position: fixed;
+        left: -65px;
+        bottom: 50%;
+    }
+
+    .cellbtn a:visited {
+        color: #ffffff;
+    }
+
+    
+    
+    .socialbtn {
+        margin: 30px auto;
+    }
+    
+    .img-thumbnail {
+        border: none;
+        background-color: rgba(0, 0, 0, .0);
+    }
+    
+    .full {
+        z-index: -10;
+        background: url(../images/background.jpg) no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        background-position: 0;
+        height: 100%;
+        overflow-x: hidden;
+    }
+    
+    .bg {
+        position: fixed;
+        top: 0;
+        left: 0;
+        min-width: 100%;
+        min-height: 100%;
+    }
+    
+    .vignette p {
+        text-align: center;
+    }
+    
+    .tb {
+        color: #f0ad4e;
+        text-align: center;
+    }
+    
+    .tb td {}
+    
+    .main {
+        background-color: rgba(0, 6, 26, .6);
+        border-radius: 25px;
+        margin: 30px 0 0 0;
+        /*    padding: 20px;
+    width: 100%;*/
+    }
+    
+    .main-nbc {
+        background-color: none;
+        border-radius: 25px;
+        margin: 30px 0 0 0;
+        /*    padding: 20px;
+    width: 100%;*/
+    }
+    
+    .sub {
+        /*background-color: rgba(50, 6, 26, .3);
+    border-radius: 25px;*/
+        padding: 20px;
+    }
+    
+    .pgroup {
+        background-color: rgba(0, 6, 26, .9);
+        border-radius: 25px;
+        width: 100%;
+    }
+    
+    .row img {
+        margin-bottom: 6px;
+    }
+    
+    iframe {
+        border-radius: 25px;
+        width: 100%;
+        max-width: 420px;
+        min-height: 230px;
+        max-height: 75%;
+    }
+    
+    .zsat img {
+        max-width: 100%;
+    }
+    
+    @media screen and (max-width: 1200px) {
+        .main {
+            background-color: rgba(0, 6, 26, .3);
+            border-radius: 25px;
+            margin: 30px 0 0 0;
+        }
+    }
+    
+    @media screen and (max-width: 768px) {
+        .full {
+            content: "";
+            display: block;
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+        }
+        h3 {
+            font-size: 1.5em;
+        }
+        .img-limit {
+            width: 100%;
+            max-width: 350px;
+        }
+        .resbtn {
+            display: none;
+        }
+        .cellbtn {
+            z-index: 2;
+            display: block;
+            position: relative;
+            left: 0px;
+            bottom: 0px;
+            padding: 0 0 20px 0;
+            margin: 20px;
+            text-align: center;
+        }
+        .cellbtn a {
+            width: 100%;
+        }
+        .bg {
+            display: none;
+        }
+        iframe {
+            width: 100%;
+            max-width: 320px;
+            min-height: 180px;
+            max-height: 75%;
+        }
+    }
+    
+    @media screen and (max-width: 450px) {
+        iframe {
+            width: 100%;
+            height: 180px;
+        }
+    }
